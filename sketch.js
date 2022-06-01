@@ -1,7 +1,7 @@
-float theta, fillcolor, radius, x, y, angle, newX, newY, count;
+var theta, fillcolor, radius, x, y, angle, newX, newY, count;
 
-void setup(){
-  size(400,400);
+function setup(){
+  createCanvas(400,400);
   theta = 0;
   fillcolor = 0;
   x = width/2;
@@ -11,7 +11,7 @@ void setup(){
   count = 0;
 }
 
-void draw(){
+function draw(){
   background(255);
   newY = newY(radius, y, theta);
   newX = newX(radius, x, theta);
@@ -29,11 +29,11 @@ void draw(){
   }
 };
 
-float newX (float radius,float x,float angle){
+function newX (float radius,float x,float angle){
   return x + (radius * cos(radians(angle)));
 };
 
-float newY (float radius,float y,float angle){
+function newY (float radius,float y,float angle){
   return y + (radius * sin(radians(angle)));
 };
 

@@ -1,7 +1,39 @@
-function setup() {
-  // put setup code here
+float theta, fillcolor, radius, x, y, angle, newX, newY, count;
+
+void setup(){
+  size(400,400);
+  theta = 0;
+  fillcolor = 0;
+  x = width/2;
+  y = height/2;
+  radius = 100;
+  frameRate(60);
+  count = 0;
 }
 
-function draw() {
-  // put drawing code here
-}
+void draw(){
+  background(255);
+  newY = newY(radius, y, theta);
+  newX = newX(radius, x, theta);
+  fill(0,fillcolor,0);
+  circle(newX, newY,50);
+  fill(0);
+  line(x,y,newX,newY);
+  theta += 1;
+  count += 1;
+  if (count%60 == 0){
+    fillcolor += 10;
+  }
+  if (255<fillcolor){
+    fillcolor = 0;
+  }
+};
+
+float newX (float radius,float x,float angle){
+  return x + (radius * cos(radians(angle)));
+};
+
+float newY (float radius,float y,float angle){
+  return y + (radius * sin(radians(angle)));
+};
+

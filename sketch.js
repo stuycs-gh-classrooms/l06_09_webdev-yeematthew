@@ -29,11 +29,11 @@ function draw(){
   }
 };
 
-function newX (var radius,var x,var angle){
+function newX (radius, x, angle){
   return x + (radius * cos(radians(angle)));
 };
 
-function newY (var radius,var y,var angle){
+function newY (radius, y, angle){
   return y + (radius * sin(radians(angle)));
 };
 

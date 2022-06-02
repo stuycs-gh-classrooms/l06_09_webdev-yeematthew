@@ -3,7 +3,8 @@ var radius;
 var x;
 var y;
 var angle;
-var newnewY;
+var newX
+var newY;
 var count;
 var fillcolor;
 

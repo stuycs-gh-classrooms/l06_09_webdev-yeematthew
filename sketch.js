@@ -5,7 +5,7 @@ var y;
 var angle;
 var newnewY;
 var count;
-var fillcolor = 0;
+var fillcolor;
 
 function newX (radius, x, angle){
   return x + (radius * cos(radians(angle)));

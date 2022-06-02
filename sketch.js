@@ -7,6 +7,15 @@ var newnewY;
 var count;
 var fillcolor = 0;
 
+function newX (radius, x, angle){
+  return x + (radius * cos(radians(angle)));
+}
+
+function newY (radius, y, angle){
+  return y + (radius * sin(radians(angle)));
+}
+
+
 function setup(){
   createCanvas(400,400);
   theta = 0;
@@ -35,12 +44,3 @@ function draw(){
     fillcolor = 0;
   }
 }
-
-function newX (radius, x, angle){
-  return x + (radius * cos(radians(angle)));
-}
-
-function newY (radius, y, angle){
-  return y + (radius * sin(radians(angle)));
-}
-

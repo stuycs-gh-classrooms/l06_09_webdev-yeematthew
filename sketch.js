@@ -1,4 +1,11 @@
-var theta, fillcolor, radius, x, y, angle, newX, newY, count;
+var theta;
+var fillcolor;
+var radius;
+var x;
+var y;
+var angle;
+var newnewY;
+var count;
 
 function setup(){
   createCanvas(400,400);

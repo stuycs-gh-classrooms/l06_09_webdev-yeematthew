@@ -1,5 +1,4 @@
 var theta;
-var fillcolor;
 var radius;
 var x;
 var y;
@@ -22,7 +21,7 @@ function draw(){
   background(255);
   newY = newY(radius, y, theta);
   newX = newX(radius, x, theta);
-  fill(0,fillcolor,0);
+  fill(0,255,0);
   circle(newX, newY,50);
   fill(0);
   line(x,y,newX,newY);

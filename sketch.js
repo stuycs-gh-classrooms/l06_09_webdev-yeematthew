@@ -5,6 +5,7 @@ var y;
 var angle;
 var newnewY;
 var count;
+var fillcolor = 0;
 
 function setup(){
   createCanvas(400,400);
@@ -21,7 +22,7 @@ function draw(){
   background(255);
   newY = newY(radius, y, theta);
   newX = newX(radius, x, theta);
-  fill(0,255,0);
+  fill(0, fillcolor, 0);
   circle(newX, newY,50);
   fill(0);
   line(x,y,newX,newY);

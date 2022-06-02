@@ -34,13 +34,13 @@ function draw(){
   if (255<fillcolor){
     fillcolor = 0;
   }
-};
+}
 
 function newX (radius, x, angle){
   return x + (radius * cos(radians(angle)));
-};
+}
 
 function newY (radius, y, angle){
   return y + (radius * sin(radians(angle)));
-};
+}
 

@@ -8,11 +8,11 @@ var newY;
 var count;
 var fillcolor;
 
-function newX (radius, x, angle){
+function functX (radius, x, angle){
   return x + (radius * cos(radians(angle)));
 }
 
-function newY (radius, y, angle){
+function functY (radius, y, angle){
   return y + (radius * sin(radians(angle)));
 }
 
@@ -30,8 +30,8 @@ function setup(){
 
 function draw(){
   background(255);
-  newY = newY(radius, y, theta);
-  newX = newX(radius, x, theta);
+  newY = functY(radius, y, theta);
+  newX = functX(radius, x, theta);
   fill(0, fillcolor, 0);
   circle(newX, newY,50);
   fill(0);
